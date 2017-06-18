@@ -1,0 +1,14 @@
+$(document).ready(function(){
+ 	$(".owl-carousel").owlCarousel({
+  		items:1
+    });
+    $(".toggle-btn").on("click",function(){
+		$(".menu").slideToggle();
+	});
+	$(".feedback").on("click",function(){
+		$(".modal").toggleClass("open");
+	});
+	$(".button__close").on("click",function(){
+		$(".modal").removeClass("open");
+	});
+});
